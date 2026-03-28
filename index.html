@@ -4,150 +4,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="preload" href="styles/fonts.css" as="style">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Главная</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="/index.html" style="color: black;">Главная</a></li>
-            <li><a href="/Blog.html" style="color: black;">Блог</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h2>Обо мне</h2>
-        <p>Добро пожаловать! Я веб-разработчик с 5-летним опытом в создании интерактивных интерфейсов. На этом блоге я
-            делюсь своими знаниями, проектами и идеями о том, как технология меняет способ общения людей. 
-            <br>Здесь вы найдёте туториалы, кейсы из реальной практики и вдохновляющие истории.</p>
-        <img src="assets/e22ee45dc950c0a02d3998b6dcf70dad7540d7db.png" alt="Фото горы">
-    </header>
-    <main>
-        <section>
-            <div>
-                <h2>Моя Карьера</h2>
-                <h3>Текущая должность</h3>
-                <p>
-                    Старший веб-разработчик, ООО "DigitalStudio" (2022 — по настоящее время)
-                    <br>Руководство командой из 4 разработчиков, разработка архитектуры фронтенда, менторство младших
-                    специалистов, внедрение новых технологий в рабочий процесс.
-                </p>
+    <div class="body">
+        <header class="header">
+            <div class="header_container">
+                <div class="logo">Name-folio</div>
+                <nav class="nav">
+                    <ul class="nav_list">
+                        <li><a href="#hero" class="nav_link text_md">About me</a></li>
+                        <li><a href="blog.html" class="nav_link text_md">Blog</a></li>
+                        <li><a href="#footer" class="nav_link text_md">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div>
-                <br>
-                <h3>Опыт работы:</h3>
-                <p>
-                    <strong>Веб-разработчик, ООО "CreativeAgency" (2019 — 2022)</strong>
-                    <br>Создание корпоративных сайтов и веб-приложений на React и Vue.js, оптимизация
-                    производительности, работа с клиентами и сбор требований.
-                </p>
-                <p>
-                    <strong>Фронтенд-разработчик, Стартап "TechVenture" (2018 — 2019)</strong>
-                    <br>Разработка пользовательского интерфейса для платформы e-learning, работа с REST API и
-                    веб-стандартами.
-                </p>
-                <p>
-                    <strong>Интернет-стажёр, Веб-студия "WebMasters" (2017 — 2018)</strong>
-                    <br>Первый опыт в профессиональной разработке, участие в создании и поддержке различных проектов.
-                </p>
-            </div>
-            <div>
-                <br>
-                <h3>Образование:</h3>
-                <p>
-                    <strong>Государственный Технический Университет, 2013 — 2017</strong>
-                    <br>Бакалавриат по специальности "Информатика и вычислительная техника"
-                    <br>Выпускная работа: "Оптимизация загрузки веб-страниц на мобильных устройствах"
-                </p>
-            </div>
-            <div>
-                <br>
-                <h3>Курсы и сертификации:</h3>
-                <ul>
-                    <li>Advanced React Development — Coursera (2023)</li>
-                    <li>UX/UI Design Fundamentals — Skillbox (2021)</li>
-                    <li>Web Performance Optimization — Frontend Masters (2022)</li>
-                    <li>Google Analytics Certification (2020)</li>
-                </ul>
-            </div>
-            <div>
-                <br>
-                <h3>Навыки:</h3>
-                <ul>
-                    <li>Программирование: JavaScript, TypeScript, React, Vue.js, HTML5, CSS3, Node.js</li>
-                    <li>Инструменты: Git, Webpack, Docker, Figma, VS Code</li>
-                    <li>Методологии: Agile, Scrum, Test-Driven Development</li>
-                </ul>
-            </div>
-            <div>
-                <br>
-                <h3>Достижения:</h3>
-                <ul>
-                    <li>Разработал платформу для управления проектами, которой пользуются более 500 компаний</li>
-                    <li>Снизил время загрузки сайта на 60% благодаря оптимизации и внедрению современных стандартов</li>
-                    <li>Провёл более 20 воркшопов и мастер-классов для начинающих разработчиков</li>
-                    <li>Организовал две конференции "Web Technologies Conference" в своем городе</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <div>
-                <br>
-                <h2>Последние статьи</h2>
-                <br>
-                <article>
-                    <strong>Как создать адаптивный дизайн за 30 минут</strong>
-                    <p>Опубликовано: 15 декабря 2024</p>
-                    <p>В этой статье я расскажу о ключевых принципах создания мобильных интерфейсов, которые одинаково
-                        хорошо выглядят на всех устройствах .Вы узнаете о медиа-запросах, гибких сетках и практических
-                        примерах кода, которые
-                        <br>можно использовать прямо сейчас.
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero_content" id="hero">
+                    <h1>Hello! I’m Nelsom, a photographer</h1>
+                    <p class="text_sm">
+                        Occaecat elit pariatur non Lorem laborum proident Lorem non sint nostrud. Et dolore incididunt
+                        mollit nostrud Lorem dolore. Qui aliquip aute amet eu adipisicing velit ullamco nulla sint enim
+                        do
+                        quis aute
                     </p>
+                    <a href="#" class="btn hero_btn">More about me ></a>
+                </div>
+                <img class="hero_image_main" src="assets/hero_image_main.png" alt="Фото">
+                <img class="hero_image_over" src="assets/hero_image_over.png">
+            </section>
+            <section>
+                <article class="blog_container">
+                    <div>
+                        <div class="blog_tag">
+                            Product photography
+                        </div>
+                        <h4>Paris secrets</h4>
+                        <p class="text_md">Occaecat elit pariatur non Lorem laborum proident Lorem non sint nostrud. Et
+                            dolore incididunt mollit nostrud Lorem dolore. Qui aliquip aute amet eu adipisicing velit
+                            ullamco nulla sint enim do quis aute</p>
+                    </div>
+                    <img class="blog_image" src="assets/blog_image.png" alt="Фото">
                 </article>
-                <br>
-                <article>
-                    <strong>Как создать адаптивный дизайн за 30 минут</strong>
-                    <p>Опубликовано: 15 декабря 2024</p>
-                    <p>В этой статье я расскажу о ключевых принципах создания мобильных интерфейсов, которые одинаково
-                        хорошо выглядят на всех устройствах .Вы узнаете о медиа-запросах, гибких сетках и практических
-                        примерах кода, которые
-                        <br>можно использовать прямо сейчас.
-                    </p>
+                <article class="blog_container">
+                    <div>
+                        <div class="blog_tag">
+                            Product photography
+                        </div>
+                        <h4>Paris secrets</h4>
+                        <p class="text_md">Occaecat elit pariatur non Lorem laborum proident Lorem non sint nostrud. Et
+                            dolore incididunt mollit nostrud Lorem dolore. Qui aliquip aute amet eu adipisicing velit
+                            ullamco nulla sint enim do quis aute</p>
+                    </div>
+                    <img class="blog_image" src="assets/blog_image.png" alt="Фото">
                 </article>
-                <br>
-                <article>
-                    <strong>Как создать адаптивный дизайн за 30 минут</strong>
-                    <p>Опубликовано: 15 декабря 2024</p>
-                    <p>В этой статье я расскажу о ключевых принципах создания мобильных интерфейсов, которые одинаково
-                        хорошо выглядят на всех устройствах .Вы узнаете о медиа-запросах, гибких сетках и практических
-                        примерах кода, которые
-                        <br>можно использовать прямо сейчас.
-                    </p>
-                </article>
-                <br>
-                <article>
-                    <strong>Как создать адаптивный дизайн за 30 минут</strong>
-                    <p>Опубликовано: 15 декабря 2024</p>
-                    <p>В этой статье я расскажу о ключевых принципах создания мобильных интерфейсов, которые одинаково
-                        хорошо выглядят на всех устройствах .Вы узнаете о медиа-запросах, гибких сетках и практических
-                        примерах кода, которые
-                        <br>можно использовать прямо сейчас.
-                    </p>
-                </article>
-            </div>
-        </section>
-        <a href="Blog.html"> <u>Посмотреть все статьи</u></a>
-        <br>
-        <br>
-    </main>
-    <footer>
-        <h2>Контакты</h2>
-        <p>Email: <u>nikolai.pavuk@yandex.ru</u>
-            <br>Телефон: +7 (996) 546-28-35
-        </p>
+                <div class="blog_button_container">
+                    <a href="blog.html" class="btn">Browse all posts</a>
+                </div>
+            </section>
 
-        <h3>Социальные сети:</h3>
-        Instagram | Twitter | LinkedIn | GitHub
+            <section class="skills_container">
+                <h1 class="skills_title">My skills</h1>
+                <ul class="skills_list">
+                    <li class="skill_item">
+                        <h5>Photography</h5>
+                    </li>
+                    <li class="skill_item">
+                        <h5>Graphic Design</h5>
+                    </li>
+                    <li class="skill_item">
+                        <h5>Creativity</h5>
+                    </li>
+                    <li class="skill_item">
+                        <h5>Brand Identity</h5>
+                    </li>
+                    <li class="skill_item">
+                        <h5>Copy Writing</h5>
+                    </li>
+                    <li class="skill_item">
+                        <h5>Team Working</h5>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="my_work_container">
+                <div class="my_work_text_container">
+                    <h1>My Work</h1>
+                    <p class="text_xl">Occaecat elit pariatur non Lorem laborum proident Lorem non sint nostrud. Et
+                        dolore
+                        incididunt mollit nostrud Lorem dolore. Qui aliquip aute amet eu adipisicing velit ullamco nulla
+                        sint enim do quis aute</p>
+                </div>
+                <div class="my_work_portfolio_container">
+
+                    <article class="my_work_portfolio_item">
+                        <img class="my_work_portfolio_image" src="assets/my_work_portfolio_image_1.png" alt="Фото">
+                        <div class="my_work_portfolio_text">
+                            <p class="text_md work_title">Consectetur - (2016 - 2017)</p>
+                            <p class="text_xl">Graphic Design</p>
+                            <p class="text_md">Occaecat elit pariatur non Lorem laborum proident Lorem non sint nostrud.
+                                Et
+                                dolore
+                                incididunt mollit nostrud Lorem dolore. </p>
+                        </div>
+                    </article>
+
+                    <article class="my_work_portfolio_item">
+                        <img class="my_work_portfolio_image" src="assets/my_work_portfolio_image_2.png" alt="Фото">
+                        <div class="my_work_portfolio_text">
+                            <p class="text_md work_title">Consectetur - (2016 - 2017)</p>
+                            <p class="text_xl">Graphic Design</p>
+                            <p class="text_md">Occaecat elit pariatur non Lorem laborum proident Lorem non sint nostrud.
+                                Et
+                                dolore
+                                incididunt mollit nostrud Lorem dolore. </p>
+                        </div>
+                    </article>
+
+                    <article class="my_work_portfolio_item">
+                        <img class="my_work_portfolio_image" src="assets/my_work_portfolio_image_3.png" alt="Фото">
+                        <div class="my_work_portfolio_text">
+                            <p class="text_md work_title">Consectetur - (2016 - 2017)</p>
+                            <p class="text_xl">Graphic Design</p>
+                            <p class="text_md">Occaecat elit pariatur non Lorem laborum proident Lorem non sint nostrud.
+                                Et
+                                dolore
+                                incididunt mollit nostrud Lorem dolore. </p>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section>
+                <div class="my_hobbies_grid">
+                    <h1>Hobby projects</h1>
+                    <p class="my_hobbies_right_text">Duis nisi do exercitation in irure aliqua commodo nisi eu id
+                        reprehenderit dolore fugiat consectetur
+                        irure labore est ea.</p>
+
+                    <div class="my_hobbies_photos_left_grid">
+                        <div class="fading_container">
+                            <img class="my_hobbies_photos_img" src="assets/hobby_image_1.png" alt="">
+                            <div class="hobbies_fade_in">
+                                <h4>Hobby project name</h4>
+                                <span class="text_md">Duis nisi do exercitation in irure aliqua commodo nisi eu id
+                                    reprehenderit dolore fugiat consectetur irure labore est ea.</span>
+                            </div>
+                        </div>
+                        <div class="fading_container">
+                            <img class="my_hobbies_photos_img" src="assets/hobby_image_2.png" alt="">
+                            <div class="hobbies_fade_in">
+                                <h4>Hobby project name</h4>
+                                <span class="text_md">Duis nisi do exercitation in irure aliqua commodo nisi eu id
+                                    reprehenderit dolore fugiat consectetur irure labore est ea.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my_hobbies_photos_right_grid">
+                        <div class="fading_container">
+                            <img class="my_hobbies_photos_img" src="assets/hobby_image_3.png" alt="">
+                            <div class="hobbies_fade_in">
+                                <h4>Hobby project name</h4>
+                                <span class="text_md">Duis nisi do exercitation in irure aliqua commodo nisi eu id
+                                    reprehenderit dolore fugiat consectetur irure labore est ea.</span>
+                            </div>
+                        </div>
+                        <div class="fading_container">
+                            <img class="my_hobbies_photos_img" src="assets/hobby_image_4.png" alt="">
+                            <div class="hobbies_fade_in">
+                                <h4>Hobby project name</h4>
+                                <span class="text_md">Duis nisi do exercitation in irure aliqua commodo nisi eu id
+                                    reprehenderit dolore fugiat consectetur irure labore est ea.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+
+    <footer class="footer" id="footer">
+        <div class="footer_container_l">
+            <h1>
+                Say hello and let's work together !
+            </h1>
+            <address>
+                Email: <a href="mailto:nikolai.pavuk@yandex.ru">nikolai.pavuk@yandex.ru</a>
+                <br>
+                Телефон: <a href="tel:89965462835">89965462835</a>
+            </address>
+            <div class="footer_link_img">
+                <img class="img_link" src="assets/footer_image_vk.png" alt="vk">
+                <img class="img_link" src="assets/footer_image_tg.png" alt="tg">
+                <img class="img_link" src="assets/footer_image_github.png" alt="github">
+            </div>
+            <div class="text_sm">
+                © 2026 Brand, Inc
+            </div>
+        </div>
+
+        <form method="get" class="footer_container_r">
+            <div class="text_sm">
+                Email <br>
+                <input class="input" name="user_email" placeholder="Your email address">
+            </div>
+            <div class="text_sm">
+                Input your message <br>
+                <textarea class="input" name="user_blog" rows="10" placeholder="Describe your project"></textarea>
+            </div>
+            <div>
+                <button class="btn" type="submit">Отправить</button>
+            </div>
+        </form>
     </footer>
+
 </body>
+
+
 
 </html>
