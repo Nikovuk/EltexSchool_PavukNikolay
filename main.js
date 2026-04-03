@@ -30,9 +30,12 @@ function closeOnBackDropClick({ currentTarget, target }) {
 
 function addBlogCard() {
   let blogCard = blogCardTemplate.content.cloneNode(true);
-  blogCard.querySelector(".blog_card_title").textContent = "title";
-  blogCard.querySelector(".blog_card_descrition").textContent =
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+
+const title = document.getElementById("new_blog_title").value.trim();
+const content = document.getElementById("new_blog_content").value.trim();
+
+  blogCard.querySelector(".blog_card_title").textContent = title;
+  blogCard.querySelector(".blog_card_descrition").textContent = content;
 
   const now = new Date();
   const timeEl = blogCard.querySelector("time");
@@ -43,7 +46,18 @@ function addBlogCard() {
     day: "numeric",
   });
 
-  blogCardsContainer.appendChild(blogCard);
+  blogCardsContainer.appendChild(blogCard);  
+  blogSubmitWindow.reset();
+  closeBlogSubmit();
+}
+function deleteBlogCard()
+{
+  const deleteButton = event.target.closest(".delete_blog_button");
+
+  const card = deleteButton.closest(".blog_card");
+  if (card) {
+    card.remove();
+  }
 }
 
 function openStatisticsAndLockScroll() {
@@ -57,6 +71,7 @@ function openBlogSubmit() {
 }
 
 function closeBlogSubmit() {
+  blogSubmitWindow.reset();
   blogSubmitWindow.classList.remove("active");
 }
 
@@ -115,4 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
 blogSubmitWindow.addEventListener("submit", (event) => {
   event.preventDefault();
   addBlogCard();
+});
+blogCardsContainer.addEventListener("click", (event) => {
+  deleteBlogCard();
 });
