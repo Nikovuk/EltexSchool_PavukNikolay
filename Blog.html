@@ -55,33 +55,35 @@
                     </div>
                     <div class="input_blog_buttons_container">
                         <button id="add_blog_button" class="btn" type="submit">Добавить</button>
-                        <button
-                            id="close_blog_submit_button" class="btn" type="button">Отмена</button>
+                        <button id="close_blog_submit_button" class="btn" type="button">Отмена</button>
                     </div>
                 </form>
             </div>
         </main>
-        <div class="side_menu">
-            <input class="side_add_blog_button" id="open_blog_submit_button" type="image" title="Добавить статью"
-                alt="add blog" src="assets/side_menu_add.png">
-            <input class="open_statistics_button" id="show_statistics_button" type="image" title="Посмотреть статистику"
-                alt="Статистика" src="assets/side_menu_stat.png">
-        </div>
-        <dialog class="statistics_dialog" id="statistics_window">
-            <div class="class_statistics_dialog_container">
-                <h4>Статистика страницы</h4>
-                <button class="closeDialogBtn btn">✕</button>
-                <div class="stat_card">
-                    <span class="text_md">Всего статей:</span>
-                    <h3 id="posts_count">10</h3>
-                </div>
-                <div class="stat_card">
-                    <span class="text_md">Комментарии:</span>
-                    <h3 id="comments_count">10</h3>
-                </div>
-            </div>
-        </dialog>
+
+
     </div>
+    <div class="side_menu">
+        <input class="side_add_blog_button" id="open_blog_submit_button" type="image" title="Добавить статью"
+            alt="add blog" src="assets/side_menu_add.png">
+        <input class="open_statistics_button" id="show_statistics_button" type="image" title="Посмотреть статистику"
+            alt="Статистика" src="assets/side_menu_stat.png">
+    </div>
+
+    <dialog class="statistics_dialog" id="statistics_window">
+        <div class="class_statistics_dialog_container">
+            <h4>Статистика страницы</h4>
+            <button class="closeDialogBtn btn">✕</button>
+            <div class="stat_card">
+                <span class="text_md">Всего статей:</span>
+                <h3 id="posts_count">10</h3>
+            </div>
+            <div class="stat_card">
+                <span class="text_md">Комментарии:</span>
+                <h3 id="comments_count">10</h3>
+            </div>
+        </div>
+    </dialog>
 
     <template id="blog_card_template">
         <article class="blog_card">
