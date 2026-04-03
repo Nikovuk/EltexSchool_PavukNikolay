@@ -35,58 +35,72 @@
                 </div>
                 <img src="assets/hero_image_over.png" alt="My Blogs">
             </section>
-
-            <section class="blog_card_big_container">
-                <img class="blog_card_big_image" src="assets/blog_image.png" alt="Post Image">
-                <div class="blog_card_big_right_text">
-                    <h2>Minim anim pariatur magna duis sit et dolor inci</h2>
-                    <span>
-                        Sint occaecat deserunt aliquip do occaecat ut quis. Cupidatat magna fugiat quis sit duis est in
-                        volup
-                    </span>
-                    <time datetime="2025-10-16">Oct 16, 2025</time>
-                </div>
-            </section>
-
-
             <section class="blog_cards_container">
-                <article class="blog_card">
-                    <img class="blog_card_image" src="assets/blog_image.png" alt="blog img">
-                    <span class="text_lg">Minim anim pariatur magna duis sit et dolor inci</span>
-                    <time datetime="2025-10-16">Oct 16, 2025</time>
-                </article>
-
-                <article class="blog_card">
-                    <img class="blog_card_image" src="assets/blog_image.png" alt="blog img">
-                    <span class="text_lg">Minim anim pariatur magna duis sit et dolor inci</span>
-                    <time datetime="2025-10-16">Oct 16, 2025</time>
-                </article>
-                <article class="blog_card">
-                    <img class="blog_card_image" src="assets/blog_image.png" alt="blog img">
-                    <span class="text_lg">Minim anim pariatur magna duis sit et dolor inci</span>
-                    <time datetime="2025-10-16">Oct 16, 2025</time>
-                </article>
-                <article class="blog_card">
-                    <img class="blog_card_image" src="assets/blog_image.png" alt="blog img">
-                    <span class="text_lg">Minim anim pariatur magna duis sit et dolor inci</span>
-                    <time datetime="2025-10-16">Oct 16, 2025</time>
-                </article>
-                <article class="blog_card">
-                    <img class="blog_card_image" src="assets/blog_image.png" alt="blog img">
-                    <span class="text_lg">Minim anim pariatur magna duis sit et dolor inci</span>
-                    <time datetime="2025-10-16">Oct 16, 2025</time>
-                </article>
-                <article class="blog_card">
-                    <img class="blog_card_image" src="assets/blog_image.png" alt="blog img">
-                    <span class="text_lg">Minim anim pariatur magna duis sit et dolor inci</span>
-                    <time datetime="2025-10-16">Oct 16, 2025</time>
-                </article>
             </section>
             <div class="blog_button_container">
                 <a href="blog.html" class="btn blog_btn">Next →</a>
             </div>
+            <div>
+                <form method="get" class="input_blog_container" id="input_blog_window">
+                    <h1>Добавить статью</h1>
+                    <div class="text_sm">
+                        Заголовок <br>
+                        <input id="new_blog_title" class="input_blog" type="text" rows="1" placeholder="Заголовок"
+                            required>
+                    </div>
+                    <div class="text_sm">
+                        Текст статьи <br>
+                        <textarea id="new_blog_content" class="input_blog" name="user_blog" rows="5"
+                            placeholder="Текст статьи" required></textarea>
+                    </div>
+                    <div class="input_blog_buttons_container">
+                        <button id="add_blog_button" class="btn" type="submit">Добавить</button>
+                        <button id="close_blog_submit_button" class="btn" type="button">Отмена</button>
+                    </div>
+                </form>
+            </div>
         </main>
+
+
     </div>
+    <div class="side_menu">
+        <input class="side_add_blog_button" id="open_blog_submit_button" type="image" title="Добавить статью"
+            alt="add blog" src="assets/side_menu_add.png">
+        <input class="open_statistics_button" id="show_statistics_button" type="image" title="Посмотреть статистику"
+            alt="Статистика" src="assets/side_menu_stat.png">
+    </div>
+
+    <dialog class="statistics_dialog" id="statistics_window">
+        <div class="class_statistics_dialog_container">
+            <h4>Статистика страницы</h4>
+            <button class="closeDialogBtn btn">✕</button>
+            <div class="stat_card">
+                <span class="text_md">Всего статей:</span>
+                <h3 id="posts_count">10</h3>
+            </div>
+            <div class="stat_card">
+                <span class="text_md">Комментарии:</span>
+                <h3 id="comments_count">10</h3>
+            </div>
+        </div>
+    </dialog>
+
+    <template id="blog_card_template">
+        <article class="blog_card">
+            <div class="blog_card_image">
+                <img src="assets/blog_image.png" alt="blog img">
+            </div>
+            <div class="blog_card_text_container">
+                <span class="text_lg blog_card_title">Minim anim pariatur magna duis sit et dolor inci</span>
+                <p class="text_md blog_card_descrition">
+                    Sint occaecat deserunt aliquip do occaecat ut quis. Cupidatat magna fugiat quis sit duis est
+                    in
+                    volup
+                </p>
+                <time class="text_sm" datetime="2025-10-16">Oct 16, 2025</time>
+            </div>
+        </article>
+    </template>
 
 
 
@@ -120,9 +134,11 @@
                 <textarea class="input" name="user_blog" rows="10" placeholder="Describe your project"></textarea>
             </div>
             <div>
-                <button class="btn" type="submit">Отправить</button>
+                <button class="btn" type="button">Отправить</button>
             </div>
         </form>
     </footer>
+    <script src="main.js"></script>
 </body>
+
 </html>
