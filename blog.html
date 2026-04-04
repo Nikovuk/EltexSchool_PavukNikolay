@@ -37,6 +37,9 @@
             </section>
             <section class="blog_cards_container">
             </section>
+            <div class="blog_cards_empty" id="blog_cards_empty">
+                <p class="text_md">Статей пока нет.</p>
+            </div>
             <div class="blog_button_container">
                 <a href="blog.html" class="btn blog_btn">Next →</a>
             </div>
@@ -88,7 +91,7 @@
     <template id="blog_card_template">
         <article class="blog_card">
             <input class="delete_blog_button" id="delete_blog_button" type="image" title="Удалить статью"
-            alt="Удалить статью" src="assets/Delete.png">
+                alt="Удалить статью" src="assets/Delete.png">
             <div class="blog_card_image">
                 <img src="assets/blog_image.png" alt="blog img">
             </div>
@@ -99,7 +102,8 @@
                     in
                     volup
                 </p>
-                <time class="text_sm" datetime="2025-10-16">Oct 16, 2025</time>
+                <time id="blog_post_date" class="text_sm" datetime="2025-10-16">Oct 16, 2025</time>
+                <div hidden id="blog_card_id"></div>
             </div>
         </article>
     </template>
