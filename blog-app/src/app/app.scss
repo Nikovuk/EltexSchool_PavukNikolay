@@ -1,0 +1,38 @@
+.body {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.text_sm,
+.text_md,
+.text_lg,
+.text_xl {
+  color: var(--text-main);
+  margin: 5px 0;
+}
+
+.text_sm { font-size: 15px; }
+.text_md { font-size: 16px; }
+.text_lg { font-size: 20px; }
+.text_xl { font-size: 21px; }
+
+h1, h2, h3, h4, h5 {
+  color: var(--text-header);
+  font-weight: 700;
+  margin: 34px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid var(--primary-green);
+  border-radius: 6px;
+  color: var(--primary-green);
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  font-weight: 700;
+}

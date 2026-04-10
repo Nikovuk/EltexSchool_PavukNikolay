@@ -1,0 +1,204 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  gap: 30px;
+  position: relative;
+}
+
+.hero_content {
+  flex: 1;
+  max-width: 60%;
+  padding-right: 10%;
+}
+
+.hero_btn {
+  margin-top: 20px;
+  border: 0;
+  padding-left: 0;
+}
+
+.hero_image_main {
+  flex: 1;
+  max-width: 40%;
+  border-radius: 70%/50%;
+  position: relative;
+}
+
+.hero_image_over {
+  position: absolute;
+  left: 50%;
+}
+
+.blog_container {
+  border-radius: 25px;
+  display: flex;
+  background-color: #fef3ef;
+  gap: 30px;
+  margin-top: 40px;
+  padding-left: 40px;
+}
+
+.blog_tag {
+  padding-top: 40px;
+  color: #db5e31;
+}
+
+.blog_image {
+  border-radius: 0 25px 25px 0;
+  min-width: 50%;
+  padding: 0;
+  height: auto;
+}
+
+.blog_button_container {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.skills_container {
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skills_title {
+  color: var(--text-header);
+}
+
+.skills_list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.skill_item {
+  min-width: 300px;
+  position: relative;
+  padding: 22px 32px 0 0;
+}
+
+.skill_item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 2.5px;
+  background: var(--text-header);
+}
+
+.my_work_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.my_work_text_container {
+  flex: 1;
+  max-width: 45%;
+}
+
+.my_work_portfolio_container {
+  max-height: fit-content;
+  max-width: 45%;
+  padding-bottom: 10px;
+}
+
+.my_work_portfolio_item {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.my_work_portfolio_image {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 10%;
+  height: auto;
+}
+
+.work_title {
+  padding-top: 34px;
+}
+
+.my_work_portfolio_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.my_work_portfolio_item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: var(--text-header);
+}
+
+.my_hobbies_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 20px 40px;
+}
+
+.my_hobbies_right_text {
+  justify-content: center;
+}
+
+.my_hobbies_grid > p,
+.my_hobbies_grid h1 {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0;
+}
+
+.my_hobbies_photos_left_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.my_hobbies_photos_right_grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+}
+
+.fading_container {
+  position: relative;
+}
+
+.hobbies_fade_in {
+  position: absolute;
+  inset: 0;
+  background-color: var(--text-header);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hobbies_fade_in * {
+  color: var(--grey);
+}
+
+.my_hobbies_photos_img {
+  width: 100%;
+  height: 100%;
+}
+
+.fading_container:hover .hobbies_fade_in {
+  opacity: 1;
+  visibility: visible;
+}

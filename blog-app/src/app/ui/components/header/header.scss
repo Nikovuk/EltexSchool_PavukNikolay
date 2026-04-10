@@ -1,0 +1,33 @@
+.header {
+  padding: 24px 0;
+  width: 100%;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.nav_list {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav_link {
+  transition: color 0.3s, font-weight 0.6s;
+}
+
+.nav_link:hover,
+.nav_link:active {
+  color: var(--primary-green);
+  font-weight: 700;
+}
